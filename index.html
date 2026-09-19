@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaala Paani — Water Pollution on the Punjab-Himachal Border</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="brand">Kaala <span>Paani</span></div>
+    <div class="navlinks">
+      <a href="#home" data-tab="home" class="active">Home</a>
+      <a href="#problem" data-tab="problem">The problem</a>
+      <a href="#tool" data-tab="tool">AI tool</a>
+      <a href="#impact" data-tab="impact">Impact</a>
+      <a href="#action" data-tab="action">Take action</a>
+      <a href="references.html">References</a>
+    </div>
+  </div>
+</nav>
+<div class="river"></div>
+
+<!-- ===================== HOME ===================== -->
+<div class="tab-panel visible" id="tab-home">
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">An EVS field report</p>
+      <h1>Tracking water pollution on the Punjab-Himachal border</h1>
+      <p class="lede">A short investigation into the Sutlej river, the industries accused of polluting it, and the communities pushing back — built around an experimental water-sample classifier.</p>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="num">2026</div>
+          <div class="label">Year of renewed protests and complaints</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">Baddi-Nalagarh</div>
+          <div class="label">Industrial belt named in complaints</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">2 rivers</div>
+          <div class="label">Sutlej and Budha Nala both affected</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">3 states</div>
+          <div class="label">Punjab, Himachal Pradesh, Rajasthan downstream</div>
+        </div>
+      </div>
+
+      <div class="quicklinks">
+        <a class="quicklink" data-tab="problem" href="#problem">Read the case study</a>
+        <a class="quicklink" data-tab="tool" href="#tool">Try the classifier</a>
+        <a class="quicklink" data-tab="action" href="#action">See what could help</a>
+        <a class="quicklink" href="references.html">View references</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- ===================== PROBLEM ===================== -->
+<div class="tab-panel" id="tab-problem">
+  <section class="panel-body">
+    <div class="wrap">
+      <h2>The problem</h2>
+      <p class="body-text">For years, industries in the Baddi-Nalagarh-Barotiwala belt of Himachal Pradesh have been accused of discharging untreated waste that reaches Punjab through the Sirsa and Sutlej rivers. The issue resurfaced sharply in 2026, drawing political attention and renewed public anger.</p>
+      <div class="case-box">
+        <div class="label">Case study timeline</div>
+        <ul>
+          <li>A Rupnagar MLA filed a formal police complaint in August 2026 alleging industrial waste from Himachal's Baddi-Nalagarh belt was contaminating the Sutlej.</li>
+          <li>In September 2026, the same MLA publicly urged Himachal Pradesh, Haryana, and the Centre to act on untreated effluent entering the river from upstream units.</li>
+          <li>A separate, years-long grassroots campaign known as Kale Pani da Morcha continues to demand action on Sutlej and Budha Nala pollution.</li>
+          <li>Farmers who depend on the river for irrigation report damaged crops and worsening soil quality downstream.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== AI TOOL ===================== -->
+<div class="tab-panel" id="tab-tool">
+  <section class="panel-body">
+    <div class="wrap">
+      <h2>Water sample classifier — prototype</h2>
+      <p class="body-text">Upload a photo of river or canal water. This working demo estimates water condition using simple image color analysis, run entirely in your browser — a stand-in for a proper trained model to be added later.</p>
+      <div class="tool-card">
+        <div class="dropzone" id="dropzone">
+          <p><strong>Click to upload</strong> or drag a photo here</p>
+          <p style="margin-top:4px;">JPG or PNG, analyzed locally in your browser</p>
+        </div>
+        <input type="file" id="fileInput" accept="image/*">
+        <div class="preview-row">
+          <img id="previewImg" alt="Uploaded water sample preview">
+          <div class="result-panel" id="resultPanel">
+            <button class="btn" id="analyzeBtn" disabled>Analyze sample</button>
+          </div>
+        </div>
+        <p class="disclaimer" id="disclaimerText" style="display:none;">This is a placeholder heuristic based on average color and clarity, not a trained pollution-detection model. It's here so the interface actually works while the real classifier is trained.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== IMPACT ===================== -->
+<div class="tab-panel" id="tab-impact">
+  <section class="panel-body">
+    <div class="wrap">
+      <h2>Who this affects</h2>
+      <p class="body-text">The consequences of the pollution extend well beyond the riverbank itself.</p>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <h3>Public health</h3>
+          <p>Communities along the Sutlej and Budha Nala report skin conditions and waterborne illness linked to contaminated water sources.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Agriculture</h3>
+          <p>Farmers irrigating with river water describe stunted crops and degraded soil, threatening a region that depends heavily on farming.</p>
+        </div>
+        <div class="impact-card">
+          <h3>Community trust</h3>
+          <p>Repeated complaints to pollution control boards with little visible enforcement have fuelled frustration and cross-border tension.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===================== TAKE ACTION ===================== -->
+<div class="tab-panel" id="tab-action">
+  <section class="panel-body">
+    <div class="wrap">
+      <h2>What could actually help</h2>
+      <ul class="action-list">
+        <li>Mandatory, independently audited effluent treatment for all units in the Baddi-Nalagarh belt before discharge reaches the Sirsa river.</li>
+        <li>A joint Punjab-Himachal Pradesh monitoring body with real enforcement power, not just complaint-forwarding.</li>
+        <li>Public, real-time water quality dashboards for the Sutlej and Budha Nala, so contamination spikes are visible immediately.</li>
+        <li>Health screening camps for communities in the worst-affected downstream villages.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">Prototype built for an EVS course project. See the References page for sources used.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
